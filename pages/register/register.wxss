@@ -1,0 +1,80 @@
+/* pages/register/register.wxss */
+
+.register {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.register-container {
+  position: relative;
+}
+
+.register-title {
+  padding-top: 186rpx;
+  padding-left: 63rpx;
+}
+
+.register-title-text {
+  font-size: 48rpx;
+  font-weight: 400;
+  color: #333;
+}
+
+.register-input-content {
+  width: 100%;
+  margin-top: 91rpx;
+}
+
+.register-inp {
+  position: relative;
+  width: 630rpx;
+  margin-left: 63rpx;
+  margin-top: 35rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.register-input {
+  font-size: 32rpx;
+  font-weight: 400;
+  color: #333;
+}
+
+.register-identifying {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.register-identifying-text {
+  border: none;
+  font-size: 32rpx;
+  color: #3da7ba;
+  font-weight: 400;
+}
+.login-btn {
+  padding-top: 273rpx;
+  text-align:center;
+}
+.login-btn-text {
+  display: inline-block;
+  width: 462rpx;
+  height: 92rpx;
+  line-height: 92rpx;
+  background: rgba(61, 167, 186, 1);
+  border-radius: 46px;
+}
+.login-btn-text text {
+  font-weight:400;
+  color:rgba(255,255,255,1);
+  font-size: 32rpx;
+}
+.agreement {
+  z-index: 15;
+  padding-top: 238rpx;
+  bottom: 0rpx;
+  width: 100%;
+  font-size: 24rpx;
+  text-align: center;
+}

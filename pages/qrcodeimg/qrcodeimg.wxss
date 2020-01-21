@@ -1,0 +1,13 @@
+/* pages/qrcodeimg/qrcodeimg.wxss */
+.qrcodeimg-container {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50%;
+  padding-left: 35%;
+}
+
+.qrcodeimg-container image {
+  width: 258rpx;
+  height: 294rpx;
+}

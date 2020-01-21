@@ -1,0 +1,11 @@
+/* pages/login/step1/step1.wxss */
+.wx-login-container {
+  padding-top: 50%;
+}
+
+.wx-login-btn {
+  width: 75%;
+  border: 1px solid;
+  background-color: green;
+  color: #ffffff;
+}

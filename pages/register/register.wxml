@@ -1,0 +1,24 @@
+<!--pages/register/register.wxml-->
+<view class='register'>
+  <view class='register-container'>
+    <view class='register-title'>
+      <text class='register-title-text'></text>
+    </view>
+    <view class='register-input-content'>
+      <view class='register-inp'>
+        <input class='register-input' bindinput="bindKeyInput1" disabled='{{inputdisabled}}'  maxlength="11" type='number' placeholder='请输入手机号' onkeydown="if(event.keyCode==13)event.keyCode=9"></input>
+      </view>
+      <view class='register-inp'>
+        <input class='register-input' bindinput="bindKeyInput2" disabled='{{inputdisabled}}' maxlength="4" type='number' placeholder='请输入验证码'></input>
+        <view class='register-identifying' data-phone="{{inputValuephone}}" catchtap="getVerificationCode">
+          <view class='register-identifying-text' disabled='{{disabled}}'>{{time}}</view>
+        </view>
+      </view>
+    </view>
+    <view class='login-btn'>
+      <view class='login-btn-text' style="background: {{loginBgcolor}}" data-phone="{{inputValuephone}}" data-code="{{inputValuecode}}" catchtap="logibtns">
+        <text>登录/注册</text>
+      </view>
+    </view>
+  </view>
+</view>

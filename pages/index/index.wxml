@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class='home-container'>
+  <view class='home-header'>
+    <view class='home-header-left home-header-btn' catchtap='orderBtnCen'>订单中心</view>
+    <view catchtap="usercenter" class='home-header-right home-header-btn'>用户中心</view>
+  </view>
+  <scroll-view scroll-y style='height:{{screenHeight - 100}}px' class='home-list-scroll'>
+    <view class='home-content' wx:for="{{getScenicSpotListData.data}}" wx:key="item.spotid">
+      <image class='home-spot-img' src='{{item.picture}}'></image>
+      <view class='home-spot'>
+        <view>
+          <text class='home-spot-name'>{{item.areaname}}{{item.spotname}}</text>
+          <!-- <image class='home-spot-juliimg' src='../../../img/juli.png'></image>
+          <text class='home-spot-text'>150m</text> -->
+        </view>
+        <view>
+          <text class='home-spot-price'>{{item.price}}元/次</text>
+        </view>
+      </view>
+      <view class='home-shoot'>
+        <view class='home-shoot-button' catchtap='shootbutton'
+        data-ordertype="4" data-orderpaytype="3" data-functionid="{{item.functionid}}" data-spotid="{{item.spotid}}"
+        data-cityname="{{item.cityname}}" data-ordertotalprice="{{item.price}}" data-ordernote="" data-orderlongitude="{{item.longitude}}" data-orderlatitude="{{item.latitude}}" data-openids="{{openids}}" data-areaname="{{item.areaname}}" data-spotname="{{item.spotname}}"
+        >去拍摄</view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

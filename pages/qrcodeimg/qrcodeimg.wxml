@@ -1,0 +1,5 @@
+<!--pages/qrcodeimg/qrcodeimg.wxml-->
+<view class="qrcodeimg-container">
+  <view>获取二维码图片</view>
+  <view><image src="/img/img.jpg"></image></view>
+</view>

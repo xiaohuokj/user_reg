@@ -1,0 +1,4 @@
+<!--pages/login/step1/step1.wxml-->
+<view class="wx-login-container">
+	<button class='wx-login-btn' open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">登录/注册</button>
+</view>
